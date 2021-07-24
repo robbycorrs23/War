@@ -1,4 +1,4 @@
-let deckId
+let deckId;
 let computerScore = 0
 let myScore = 0
 const cardsContainer = document.getElementById("cards")
