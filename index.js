@@ -15,7 +15,6 @@ function handleClick() {
         .then(data => {
             remainingText.textContent = `Remaining cards: ${data.remaining}`
             deckId = data.deck_id
-            console.log(deckId)
         })
 }
 
@@ -27,7 +26,7 @@ drawCardBtn.addEventListener("click", () => {
         .then(data => {
             remainingText.textContent = `Remaining cards: ${data.remaining}`
             cardsContainer.children[0].innerHTML = `
-                <img src=${data.cards[0].image} class="card" />
+                <img src=${data.cards[0].image} class="card" alt="First Card" />
             `
             cardsContainer.children[1].innerHTML = `
                 <img src=${data.cards[1].image} class="card" />
