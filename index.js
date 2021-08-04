@@ -29,7 +29,7 @@ drawCardBtn.addEventListener("click", () => {
                 <img src=${data.cards[0].image} class="card" alt="First Card" />
             `
             cardsContainer.children[1].innerHTML = `
-                <img src=${data.cards[1].image} class="card" />
+                <img src=${data.cards[1].image} class="card" alt='Second Card'/>
             `
             const winnerText = determineCardWinner(data.cards[0], data.cards[1])
             header.textContent = winnerText
